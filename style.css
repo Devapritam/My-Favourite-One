@@ -114,7 +114,7 @@ h2 {
 .menu {
     z-index: 10;
     list-style: none;
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 30px;
     cursor: pointer;
@@ -199,4 +199,46 @@ iframe {
     border-width: 5px;
     border-radius: 5px;
     padding: 2px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 47.7%;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin: 5px;
+}
+
+/* Styling for the images */
+img {
+    height: 390px;
+    border: solid #000000;
+    border-width: 4px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+}
+
+#Ramanujan_photo{
+    transition: transform .2s;
+    border: solid #000000;
+    border-width: 4px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#Ramanujan_photo:hover {
+    transform: scale(0.9);
 }
